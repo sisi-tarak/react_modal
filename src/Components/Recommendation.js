@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 
-function Recommendation(props) {
+function Card(props) {
     const [show, setShow] = useState(false);
     const modalClose = () => setShow(false);
     const modalShow = () => setShow(true);  
@@ -46,4 +46,4 @@ function Recommendation(props) {
     )
   }
 
-export default Recommendation;
+export default Card;
