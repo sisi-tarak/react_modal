@@ -5,9 +5,9 @@ const Context = React.createContext();
 export class Provider extends Component {
     handler = (action, newObject) => {
         switch (action) {
-            case "ADD_RECOMMENDATION":
+            case "ADD_CARD":
                 this.setState({
-                    recommendations : [newObject,...this.state.recommendations],
+                    cards : [newObject,...this.state.cards],
                 });
                 break;
         }
@@ -15,7 +15,7 @@ export class Provider extends Component {
 
     state = {
         handler : this.handler,
-        recommendations : [
+        cards : [
             {
                 id : 1,
                 title : "He is Quick and Very Active Learner & Effective Developer ",
